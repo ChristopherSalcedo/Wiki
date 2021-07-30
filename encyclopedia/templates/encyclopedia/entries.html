@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+{%load wikiextras%}
+{% block title %}
+    {{ name }}
+{% endblock %}
+{% block body %}
+    {{EntryContent|markdown|safe}}
+    <footer class="mastfoot mt-auto">
+        <a href="{{name}}/edit">Edit Page</a>
+    </footer>
+{% endblock %}

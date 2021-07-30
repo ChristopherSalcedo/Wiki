@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error 404
+{% endblock %}
+
+{%block body%}
+    <h1> Error 404 sorry for the inconvinience the page dosen't exist </h1>
+    <a href="{% url 'encyclopedia:index' %}">Go back to home page</a>
+{%endblock%}

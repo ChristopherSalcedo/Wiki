@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block body %}
+    <h1>Entries Founded</h1>
+    {%if  list_searched %}
+        {% for listserch in list_searched %}
+            <li><a href="{{listserch}}">{{listserch}}</a></li>
+        {% endfor %}
+    {%else%}
+        <h2 style="text-align: center;">Nothing in search</h1>
+    {%endif%}
+{% endblock %}
