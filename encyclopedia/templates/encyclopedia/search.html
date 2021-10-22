@@ -8,7 +8,9 @@
     <h1>Entries Founded</h1>
     {%if  list_searched %}
         {% for listserch in list_searched %}
-            <li><a href="{{listserch}}">{{listserch}}</a></li>
+        <ul class="list-group">
+            <li class="list-group-item" style="margin-bottom: 3px; font-size: large;"><a href="{{listserch}}">{{listserch}}</a></li>
+        </ul>
         {% endfor %}
     {%else%}
         <h2 style="text-align: center;">Nothing in search</h1>

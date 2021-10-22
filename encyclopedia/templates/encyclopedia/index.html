@@ -8,7 +8,9 @@
     <h1>All Pages</h1>
     <ul>
         {% for entry in entries %}
-            <li><a href="{{entry}}">{{entry}}</a></li>
+        <ul class="list-group">
+            <li class="list-group-item" style="margin-bottom: 3px; font-size: large;"><a href="{{entry}}">{{entry}}</a></li>
+        </ul>
         {% endfor %}
     </ul>
 
